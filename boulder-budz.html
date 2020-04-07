@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<!--
+  Landed by HTML5 UP
+  html5up.net | @ajlkn
+  Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+  <head>
+    <title>Tom Curran | Boulder Budz</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+  </head>
+  <body class="is-preload">
+    <div id="page-wrapper">
+
+      <!-- Header -->
+        <header id="header">
+          <h1 id="logo"><a href="index.html">Tom Curran</a></h1>
+          <nav id="nav">
+            <ul>
+              <li><a href="#one">Bio</a></li>
+              <li>
+                <a href="#">Projects</a>
+                <ul>
+                  <li><a href="boulder-budz.html">Boulder Budz</a></li>
+                  <li><a href="full-measure.html">Full Measure</a></li>
+                  <li><a href="froyo.html">Froyo</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </header>
+
+      <!-- Main -->
+        <div id="main" class="wrapper style1">
+          <div class="container">
+            <header class="major">
+              <h2>Boulder Budz</h2>
+              <p>Stack Overflow for Climbers</p>
+            </header>
+
+            <!-- Content -->
+              <section id="content">
+                <a href="#" class="image fit"><img src="images/category-index.png" alt="" /></a>
+                <h3>What is Boulder Budz?</h3>
+                <h3>A forum app for climbers</h3>
+                <p>I'm passionate about getting outside and living an active lifestyle and I wanted my capstone to reflect that. While brainstorming I boiled my core ideas down to running and climbing. I've used apps for running in the past, but never for climbing. So I decided to create an app that gave users a place to review and discuss gear, trade and sell gear, and ask for advice on challenges they are facing in their climbing.</p>
+                <p>My Stack:</p>
+                <ul>
+                  <li>Ruby on Rails Backend</li>
+                  <li>Vue.js Frontend</li>
+                  <li>PostgreSQL</li>
+                  <li>AWS S3</li>
+                  <li>Twilio</li>
+                  <li>SASS</li>
+                  <li>Bootstrap</li>
+                  <li>HTML</li>
+                </ul>
+              </section>
+
+              <section id="content">
+                <a href="#" class="image fit"><img src="images/question-show.png" alt="" /></a>
+                <h3>Question Show Page</h3>
+                <h3>Response Options, Voting, and Nested Response Tree</h3>
+                <p>Each user question has it's own show page with a number of features. Users can respond to the question with a text response or an image response (more on that below). A user will recieve a text notification when another user replies to their question or response. The nested response tree is achieved in three steps:</p>
+                <ul>
+                  <li>Polymorphic Association on the Answer model</li>
+                  <li>Recursive methods in my Question and Answer views on the backend</li>
+                  <li>Recursive Vue component to access the "Russian Nesting Doll" of answers created by the previous two steps</li>
+                </ul>
+                <p>Each response has a vote counter, this system was based on boolean values and votes are scoped to each user having a single vote on any response on the app.</p>
+              </section>
+
+              <section id="content">
+                <a href="#" class="image fit"><img src="images/image-editor.png" alt="" /></a>
+                <h3>Image Editor</h3>
+                <p>Leveraging a third party library (vue-image-markup by Lionix Team) I created a page where users can markup the original image associated with a question, and then submit their marked up version as a response. This allows users to give visual instructions in situations where text responses aren't really enough. The library included two custom components for the editing tools and color picker. One of the major challenges was pulling images into the canvas element from S3, but nothing a few pots of coffee and a scream-pillow couldn't help me solve!</p>
+              </section>
+
+          </div>
+        </div>
+
+      <!-- Footer -->
+        <footer id="footer">
+          <ul class="icons">
+            <li><a href="https://www.linkedin.com/in/twcurran/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+            <li><a href="https://github.com/tommy3wood" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+            <!-- <li><a href="thomaswcurran1014@gmail.com" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li> -->
+          </ul>
+          <ul class="copyright">
+            <li>Phone: 330.704.3361</li><li>Email: thomaswcurran1014@gmail.com</a></li>
+          </ul>
+          <ul class="copyright">
+            <li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+          </ul>
+        </footer>
+
+    </div>
+
+    <!-- Scripts -->
+      <script src="assets/js/jquery.min.js"></script>
+      <script src="assets/js/jquery.scrolly.min.js"></script>
+      <script src="assets/js/jquery.dropotron.min.js"></script>
+      <script src="assets/js/jquery.scrollex.min.js"></script>
+      <script src="assets/js/browser.min.js"></script>
+      <script src="assets/js/breakpoints.min.js"></script>
+      <script src="assets/js/util.js"></script>
+      <script src="assets/js/main.js"></script>
+
+  </body>
+</html>
