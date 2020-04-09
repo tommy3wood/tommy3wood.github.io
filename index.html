@@ -10,6 +10,8 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="css/progress.css">
+    <link rel="stylesheet" href="css/style.css">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload landing">
@@ -147,6 +149,22 @@
 								
 							</div>
 						</div>
+            <div class="vide-player">
+              <h1>Capstone Presentation</h1>
+              <video src="videos/edited_capstone.mp4" id="video" class="screen" poster="images/poster.png"></video>
+
+              <div class="controls container">
+
+                  <button class="btn" id="play">
+                      <i class="fa fa-play fa-2x"></i>
+                  </button>
+                  <button class="btn" id="stop">
+                      <i class="fa fa-stop fa-2x"></i>
+                  </button>
+                  <input type="range" id="progress" class="progress" min="0" max="100" step="0.1" value="0">
+                  <span class="timestamp" id="timestamp">00:00</span>
+              </div>
+            </div>
 					</div>
 				</section>
 
@@ -176,6 +194,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+      <script src="script.js"></script>
 
 	</body>
 </html>
